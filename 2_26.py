@@ -18,19 +18,19 @@ def otr(x):
             s = k
             l = i
     return l
+print('Первый неизмененный массив:')
 for i in range(len(a1)):
     print(a1[i])
-print('----------')
+print('Второй неизмененный массив:')
+for i in range(len(a2)):
+    print(a2[i])
+print('Первый измененный массив:')
 s = a1[otr(a1)]
 a1[otr(a1)] = a2[otr(a2)]
 for i in range(len(a1)):
     print(a1[i])
-print('===========')
-for i in range(len(a2)):
-    print(a2[i])
-print('----------')
+print('Второй измененный массив:')
 a2[otr(a2)] = s
 for i in range(len(a2)):
     print(a2[i])
-print('Программа выводит сначала первый массив, потом его измененную версию, после второй массив и его измененную версию')
 
